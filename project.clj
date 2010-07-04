@@ -4,4 +4,5 @@
 		 [org.clojure/clojure-contrib "1.2.0-SNAPSHOT"]
                  [compojure "0.4.0"]
                  [ring/ring-jetty-adapter "0.2.3"]]
-  :dev-dependencies [[swank-clojure "1.2.1"]])
+  :dev-dependencies [[swank-clojure "1.2.1"]]
+  :main com.benatkin.chardin.app)
