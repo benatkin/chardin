@@ -6,4 +6,7 @@
   (web-app {:request-method :get :uri resource :params (first params)}))
 
 (deftest test-routes
-  (is (:body (request "/" web-app)) "Hello!"))
+  (is (= (:body (request "/" web-app)) "Hello!"))
+  (let [response (request "/bad-80s-music" web-app)]
+    (is (= (:status response) 404))
+    (is (re-find #"(?i)not found" (:body response)))))

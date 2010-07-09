@@ -4,7 +4,8 @@
   (:require [compojure.route :as route]))
 
 (defroutes web-app
-  (GET "/" [] "Hello!"))
+  (GET "/" [] "Hello!")
+  (route/not-found "The page you are looking for was not found."))
 
 (defn start-app []
   (run-jetty web-app {:port 8080}))
