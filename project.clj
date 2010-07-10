@@ -6,4 +6,4 @@
                  [ring/ring-jetty-adapter "0.2.3"]
                  [com.ashafa/clutch "0.2.1"]]
   :dev-dependencies [[swank-clojure "1.2.1"]]
-  :main com.benatkin.chardin.app)
+  :main com.benatkin.chardin.app2)

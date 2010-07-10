@@ -1,1 +1,4 @@
-lib
+/lib
+chardin-standalone.jar
+chardin.jar
+/classes
