@@ -2,9 +2,9 @@
   (use [com.benatkin.chardin.app2] :reload-all)
   (use [clojure.test]))
 
-(deftest test-route
-  (is (= (route "bad-80s-music") {:page "bad-80s-music"}))
-  (is (= (route "") {:page "home"})))
+(deftest test-parse-path
+  (is (= (parse-path "bad-80s-music") {:page "bad-80s-music"}))
+  (is (= (parse-path "") {:page "home"})))
 
 (defn req [path]
   {:request-method :get
